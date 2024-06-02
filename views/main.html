@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+</head>
+<body>
+    <h2>An evergrowing backend app with go</h2>
+    <p>{{ .Welcoming_message }}</p>
+    <div class="paragraphs-container">
+        {{ range .Paragraphs }}
+            <div class="paragraph-container">
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Contents }}</p>
+            </div>
+        {{ end }}
+    </div>
+</body>
+</html>
